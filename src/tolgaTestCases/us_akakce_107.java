@@ -21,5 +21,9 @@ public class us_akakce_107 extends BaseDriver {
         WebElement passwordPlaceholder = driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
         passwordPlaceholder.sendKeys("Password123");
 
+        WebElement girisYapButton = driver.findElement(By.cssSelector("input.s[value='Giriş yap']"));
+        girisYapButton.click();
+
+
     }
 }
