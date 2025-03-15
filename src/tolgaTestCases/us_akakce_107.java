@@ -24,6 +24,7 @@ public class us_akakce_107 extends BaseDriver {
         WebElement girisYapButton = driver.findElement(By.cssSelector("input.s[value='Giriş yap']"));
         girisYapButton.click();
 
+        driver.navigate().to("https://www.akakce.com/akakcem/");
 
     }
 }
