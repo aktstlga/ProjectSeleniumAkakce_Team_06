@@ -2,6 +2,7 @@ package tolgaTestCases;
 
 import Utlity.BaseDriver;
 import Utlity.Myfunc;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -42,7 +43,9 @@ public class us_akakce_107 extends BaseDriver {
 
         WebElement deleteButton = driver.findElement(By.cssSelector("input[value='Hesabımı sil']"));
         deleteButton.click();
+        Thread.sleep(3000);
 
-
+        WebElement warningOnFalsePassword = driver.findElement(By.cssSelector("div.alertX.t2 p"));
+        Assert.assertTrue("Uyarı mesajı doğru verilemedi.", warningOnFalsePassword.getText().contains("Mevcut şifrenizi doğru girdiğinizden emin olun."));
     }
 }
