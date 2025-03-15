@@ -36,7 +36,12 @@ public class us_akakce_107 extends BaseDriver {
         accessDeletePageButton.click();
         Thread.sleep(3000);
 
+        WebElement passwordForDelete = driver.findElement(By.cssSelector("input.t[type='password']"));
+        passwordForDelete.sendKeys("ASD");
+        Thread.sleep(3000);
 
+        WebElement deleteButton = driver.findElement(By.cssSelector("input[value='Hesabımı sil']"));
+        deleteButton.click();
 
 
     }
