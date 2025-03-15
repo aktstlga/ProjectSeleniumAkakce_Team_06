@@ -20,11 +20,17 @@ public class us_akakce_107 extends BaseDriver {
 
         WebElement passwordPlaceholder = driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
         passwordPlaceholder.sendKeys("Password123");
+        Thread.sleep(3000);
 
         WebElement girisYapButton = driver.findElement(By.cssSelector("input.s[value='Giriş yap']"));
         girisYapButton.click();
+        Thread.sleep(3000);
 
-        driver.navigate().to("https://www.akakce.com/akakcem/");
+        //driver.navigate().to("https://www.akakce.com/akakcem/");
+        WebElement myAccountAccess = driver.findElement(By.cssSelector("a[rel='nofollow'][href='/akakcem/']"));
+        myAccountAccess.click();
+
+
 
     }
 }
