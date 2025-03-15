@@ -30,6 +30,13 @@ public class us_akakce_107 extends BaseDriver {
         WebElement myAccountAccess = driver.findElement(By.cssSelector("a[rel='nofollow'][href='/akakcem/']"));
         myAccountAccess.click();
 
+        Thread.sleep(3000);
+
+        WebElement accessDeletePageButton = driver.findElement(By.cssSelector("a[href='/akakcem/kullanici-bilgilerim/uyelik-iptali/']"));
+        accessDeletePageButton.click();
+        Thread.sleep(3000);
+
+
 
 
     }
