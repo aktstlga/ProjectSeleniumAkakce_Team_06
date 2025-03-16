@@ -7,6 +7,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.time.Duration;
 
 public class berkTestCase1 extends BaseDriver {
     @Test
@@ -28,13 +31,13 @@ public class berkTestCase1 extends BaseDriver {
         WebElement message = driver.findElement(By.cssSelector("[id='HM_v8']>i>a"));
         Assert.assertTrue("Aranan mesaj bulunamadı.", message.getText().contains("Testing"));
         WaitClose();
-
-
     }
-
     @Test
     public void Test2() {
-
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.get("https://www.akakce.com/");
         Myfunc.Bekle(1);
         WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
