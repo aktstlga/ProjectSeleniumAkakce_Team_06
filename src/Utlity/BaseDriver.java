@@ -19,4 +19,11 @@ public class BaseDriver{
         Myfunc.Bekle(2);
         driver.quit();
     }
+
+    public void Driver() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize(); // Ekranı max yapıyor.
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühlet
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // 20 sn mühlet: elementi bulma mühleti
+    }
 }

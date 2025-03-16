@@ -49,6 +49,7 @@ public class us_akakce_107 extends BaseDriver {
     }
     @Test
     public void deleteAccount() throws InterruptedException {
+        Driver();
         driver.get("https://www.akakce.com");
 
         WebElement loginButton = driver.findElement(By.cssSelector("a[href='/akakcem/giris/']"));
