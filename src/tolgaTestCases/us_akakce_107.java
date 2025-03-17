@@ -26,7 +26,6 @@ public class us_akakce_107 extends BaseDriver {
         girisYapButton.click();
         Thread.sleep(3000);
 
-        //driver.navigate().to("https://www.akakce.com/akakcem/");
         WebElement myAccountAccess = driver.findElement(By.cssSelector("a[rel='nofollow'][href='/akakcem/']"));
         myAccountAccess.click();
 
@@ -46,6 +45,7 @@ public class us_akakce_107 extends BaseDriver {
 
         WebElement warningOnFalsePassword = driver.findElement(By.cssSelector("div.alertX.t2 p"));
         Assert.assertTrue("Uyarı mesajı doğru verilemedi.", warningOnFalsePassword.getText().contains("Mevcut şifrenizi doğru girdiğinizden emin olun."));
+        driver.quit();
     }
     @Test
     public void deleteAccount() throws InterruptedException {
@@ -67,7 +67,6 @@ public class us_akakce_107 extends BaseDriver {
         girisYapButton.click();
         Thread.sleep(3000);
 
-        //driver.navigate().to("https://www.akakce.com/akakcem/");
         WebElement myAccountAccess = driver.findElement(By.cssSelector("a[rel='nofollow'][href='/akakcem/']"));
         myAccountAccess.click();
         Thread.sleep(3000);
