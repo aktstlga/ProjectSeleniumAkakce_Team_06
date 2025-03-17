@@ -19,4 +19,10 @@ public class BaseDriver{
         Myfunc.Bekle(2);
         driver.quit();
     }
+    public static void Driver(){
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+    }
 }
