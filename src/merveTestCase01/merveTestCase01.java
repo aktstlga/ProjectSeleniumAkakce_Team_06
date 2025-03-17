@@ -16,8 +16,8 @@ public class merveTestCase01 extends BaseDriver {
                 loginButton.click();
                 Thread.sleep(3000);
 
-                WebElement emailField = driver.findElement(By.cssSelector("input[name='email']"));
-                WebElement passwordField = driver.findElement(By.cssSelector("input[name='password']"));
+                WebElement emailField = driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input (email)]"));
+                WebElement passwordField = driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input (password)]"));
                 WebElement submitButton = driver.findElement(By.cssSelector("button[type='submit']"));
 
                 emailField.sendKeys("team006test @gmail.com");
