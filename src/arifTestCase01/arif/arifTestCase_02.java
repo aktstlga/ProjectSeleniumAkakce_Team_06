@@ -81,7 +81,7 @@ public class arifTestCase_02 extends BaseDriver {
         System.out.println("Message = " + message.getText());
         Myfunc.Bekle(1);
 
-        Assert.assertTrue("aranılan mesaj bulunamadı",message.getText().contains("arif@example.com Bu eposta adresi zaten kayıtlı. Lütfen giriş yapmayı deneyin."));
+        Assert.assertTrue("aranılan mesaj bulunamadı",message.getText().contains("team006test@gmail.com Bu eposta adresi zaten kayıtlı. Lütfen giriş yapmayı deneyin."));
 
         WaitClose();
     }

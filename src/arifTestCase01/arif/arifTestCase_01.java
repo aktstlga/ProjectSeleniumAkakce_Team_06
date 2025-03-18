@@ -82,7 +82,7 @@ public class arifTestCase_01 extends BaseDriver {
         System.out.println("AccountName = " + userName.getText());
         Myfunc.Bekle(1);
 
-        Assert.assertTrue("aranılan mesaj bulunamadı",userName.getText().contains("Arif"));
+        Assert.assertTrue("aranılan mesaj bulunamadı",userName.getText().contains("TestName"));
 
         WaitClose();
 
