@@ -19,22 +19,22 @@ public class mertCanatTest01 extends BaseDriver {
 
         WebElement email= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email.sendKeys("team006test@gmail.com");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement password= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
         password.sendKeys("Password123");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement submitButton= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton.click();
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement akakçeAnasayfa=driver.findElement(By.cssSelector("div[id='H_v8']"));
 
         Assert.assertTrue("Aranan mesaj bulunamadı", akakçeAnasayfa.getText().contains("Kategoriler"));
 
         driver.quit();
-        Myfunc.Bekle(2);
+        Myfunc.wait(2);
     }
     @Test
     public void Test2(){
@@ -47,15 +47,15 @@ public class mertCanatTest01 extends BaseDriver {
 
         WebElement email2= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email2.sendKeys("team006test@gmail.com");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement password2= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
         password2.sendKeys("123456");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement submitButton2= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton2.click();
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
 
     }
@@ -68,15 +68,15 @@ public class mertCanatTest01 extends BaseDriver {
 
         WebElement email3= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email3.sendKeys("team006test@gmail");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement password3= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
         password3.sendKeys("Password123");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement submitButton3= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton3.click();
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
     }
     @Test
@@ -88,15 +88,15 @@ public class mertCanatTest01 extends BaseDriver {
 
         WebElement email4= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email4.sendKeys("");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement password4= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
         password4.sendKeys("");
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
         WebElement submitButton4= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton4.click();
-        Myfunc.Bekle(1);
+        Myfunc.wait(1);
 
 
     }

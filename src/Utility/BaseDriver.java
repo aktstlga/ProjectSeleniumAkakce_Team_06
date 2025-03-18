@@ -16,7 +16,7 @@ public class BaseDriver{
     }
 
     public static void WaitClose() {
-        Myfunc.Bekle(2);
+        Myfunc.wait(2);
         driver.quit();
     }
     public static void Driver(){
