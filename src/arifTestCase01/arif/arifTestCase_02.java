@@ -18,11 +18,11 @@ public class arifTestCase_02 extends BaseDriver {
 
         Myfunc.Bekle(2);
         WebElement name = driver.findElement(By.cssSelector("label[for='rnufn']+span input"));
-        name.sendKeys("arif");
+        name.sendKeys("TestName");
 
         Myfunc.Bekle(1);
         WebElement surname = driver.findElement(By.cssSelector("label[for='rnufs']+span input"));
-        surname.sendKeys("etili");
+        surname.sendKeys("TestSurname");
 
         Myfunc.Bekle(1);
         WebElement email = driver.findElement(By.cssSelector("label[for='rnufe1']+span input"));

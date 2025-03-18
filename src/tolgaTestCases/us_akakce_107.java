@@ -56,11 +56,11 @@ public class us_akakce_107 extends BaseDriver {
         loginButton.click();
 
         WebElement emailPlaceholder = driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
-        emailPlaceholder.sendKeys("arif@example.com");
+        emailPlaceholder.sendKeys("team006test@gmail.com");
         Thread.sleep(3000);
 
         WebElement passwordPlaceholder = driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(6) input"));
-        passwordPlaceholder.sendKeys("Password3210");
+        passwordPlaceholder.sendKeys("Password123");
         Thread.sleep(3000);
 
         WebElement girisYapButton = driver.findElement(By.cssSelector("input.s[value='Giriş yap']"));
@@ -76,7 +76,7 @@ public class us_akakce_107 extends BaseDriver {
         Thread.sleep(3000);
 
         WebElement passwordForDelete = driver.findElement(By.cssSelector("input.t[type='password']"));
-        passwordForDelete.sendKeys("Password3210"); //INVALID FOR NOW
+        passwordForDelete.sendKeys("Password123"); //INVALID FOR NOW
         Thread.sleep(3000);
 
         WebElement deleteButton = driver.findElement(By.cssSelector("input[value='Hesabımı sil']"));
