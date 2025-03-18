@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 
 public class arifTestCase_02 extends BaseDriver {
     @Test
-
     public void TestNotOpenAccount(){
         driver.get("https://www.akakce.com/");
         Myfunc.Bekle(3);
@@ -27,19 +26,19 @@ public class arifTestCase_02 extends BaseDriver {
 
         Myfunc.Bekle(1);
         WebElement email = driver.findElement(By.cssSelector("label[for='rnufe1']+span input"));
-        email.sendKeys("arif@example.com");
+        email.sendKeys("team006test@gmail.com");
 
         Myfunc.Bekle(1);
         WebElement emailRepeat = driver.findElement(By.cssSelector("label[for='rnufe2']+span input"));
-        emailRepeat.sendKeys("arif@example.com");
+        emailRepeat.sendKeys("team006test@gmail.com");
 
         Myfunc.Bekle(1);
         WebElement password = driver.findElement(By.cssSelector("label[for='rnufp1']+span input"));
-        password.sendKeys("Password3210");
+        password.sendKeys("Password123");
 
         Myfunc.Bekle(1);
         WebElement repeatpassword = driver.findElement(By.cssSelector("label[for='rnufp2']+span input"));
-        repeatpassword.sendKeys("Password3210");
+        repeatpassword.sendKeys("Password123");
 
         Myfunc.Bekle(1);
         WebElement female = driver.findElement(By.cssSelector("form[id='FrmRnuS']> :nth-child(17) > :nth-child(1) input"));

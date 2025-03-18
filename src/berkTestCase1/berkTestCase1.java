@@ -34,10 +34,7 @@ public class berkTestCase1 extends BaseDriver {
     }
     @Test
     public void Test2() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        Driver();
         driver.get("https://www.akakce.com/");
         Myfunc.Bekle(1);
         WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));

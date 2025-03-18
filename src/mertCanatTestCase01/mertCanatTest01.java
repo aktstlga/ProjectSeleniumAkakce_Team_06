@@ -36,17 +36,12 @@ public class mertCanatTest01 extends BaseDriver {
 
         Assert.assertTrue("Aranan mesaj bulunamadı", akakçeAnasayfa.getText().contains("Kategoriler"));
 
-
         driver.quit();
         Myfunc.Bekle(2);
-
     }
     @Test
     public void Test2(){
-        driver = new ChromeDriver();
-        driver.manage().window().maximize(); // Ekranı max yapıyor.
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühlet
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        Driver();
 
         driver.get("https://www.akakce.com/");
 
@@ -105,6 +100,7 @@ public class mertCanatTest01 extends BaseDriver {
         WebElement submitButton4= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton4.click();
         Myfunc.Bekle(1);
+
 
     }
 
