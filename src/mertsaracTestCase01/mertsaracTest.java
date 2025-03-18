@@ -1,7 +1,7 @@
 package mertsaracTestCase01;
 
-import Utlity.BaseDriver;
-import Utlity.Myfunc;
+import Utility.BaseDriver;
+import Utility.Myfunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

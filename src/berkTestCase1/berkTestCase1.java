@@ -1,15 +1,11 @@
 package berkTestCase1;
 
-import Utlity.BaseDriver;
-import Utlity.Myfunc;
-import com.google.common.annotations.VisibleForTesting;
+import Utility.BaseDriver;
+import Utility.Myfunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.time.Duration;
 
 public class berkTestCase1 extends BaseDriver {
     @Test

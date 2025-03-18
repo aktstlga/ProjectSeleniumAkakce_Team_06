@@ -1,7 +1,6 @@
 package merveTestCase01;
 
-import Utlity.BaseDriver;
-import Utlity.Myfunc;
+import Utility.BaseDriver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

@@ -1,14 +1,11 @@
 package mertCanatTestCase01;
 
-import Utlity.BaseDriver;
-import Utlity.Myfunc;
+import Utility.BaseDriver;
+import Utility.Myfunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.time.Duration;
 
 
 public class mertCanatTest01 extends BaseDriver {
