@@ -1,8 +1,0 @@
-<component name="libraryTable">
-  <library name="seleniumhq.selenium.java" type="repository">
-    <properties maven-id="org.seleniumhq.selenium:selenium-java:4.29.0" />
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
