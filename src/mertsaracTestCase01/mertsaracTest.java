@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 public class mertsaracTest extends BaseDriver {
     @Test
-    public void Test106() {
+    public void messageBoxCheck() {
         driver.get("https://www.akakce.com/");
 
         WebElement loginButton = driver.findElement(By.cssSelector("[id='H_rl_v8'] > :nth-child(2)"));
@@ -28,7 +28,7 @@ public class mertsaracTest extends BaseDriver {
         button.click();
         Myfunc.wait(1);
 
-        //  WebElement hesabim = driver.findElement(By.cssSelector("[id='HM_p_v8']+li+li+li+li"));
+        //  WebElement accessAccount = driver.findElement(By.cssSelector("[id='HM_p_v8']+li+li+li+li"));
         WebElement accessAccount = driver.findElement(By.cssSelector("[id='HM_v8']> :nth-child(1)> :nth-child(1)"));
         accessAccount.click();
         Myfunc.wait(1);
