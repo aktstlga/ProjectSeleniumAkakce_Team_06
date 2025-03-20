@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 public class berkTestCase1 extends BaseDriver {
     @Test
-    public void Test() {
+    public void US_102() {
         driver.get("https://www.akakce.com/");
         Myfunc.wait(1);
         WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
@@ -29,7 +29,7 @@ public class berkTestCase1 extends BaseDriver {
         WaitClose();
     }
     @Test
-    public void Test2() {
+    public void US_103() {
         Driver();
         driver.get("https://www.akakce.com/");
         Myfunc.wait(1);
