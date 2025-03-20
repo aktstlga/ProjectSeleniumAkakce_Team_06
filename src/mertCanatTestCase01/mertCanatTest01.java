@@ -14,11 +14,11 @@ import java.time.Duration;
 public class mertCanatTest01 extends BaseDriver {
 
     @Test
-    public void Test1(){
+    public void Positive(){
         driver.navigate().to("https://www.akakce.com/");
 
-        WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
-        gbutton.click();
+        WebElement button = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
+        button.click();
 
         WebElement email= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email.sendKeys("team006test@gmail.com");
@@ -32,9 +32,9 @@ public class mertCanatTest01 extends BaseDriver {
         submitButton.click();
         Myfunc.Bekle(1);
 
-        WebElement akakçeAnasayfa=driver.findElement(By.cssSelector("div[id='H_v8']"));
+        WebElement akakceAnasayfa=driver.findElement(By.cssSelector("div[id='H_v8']"));
 
-        Assert.assertTrue("Aranan mesaj bulunamadı", akakçeAnasayfa.getText().contains("Kategoriler"));
+        Assert.assertTrue("Aranan mesaj bulunamadı", akakceAnasayfa.getText().contains("Kategoriler"));
 
 
         driver.quit();
@@ -42,7 +42,7 @@ public class mertCanatTest01 extends BaseDriver {
 
     }
     @Test
-    public void Test2(){
+    public void Negative1(){
         driver = new ChromeDriver();
         driver.manage().window().maximize(); // Ekranı max yapıyor.
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühlet
@@ -50,8 +50,8 @@ public class mertCanatTest01 extends BaseDriver {
 
         driver.get("https://www.akakce.com/");
 
-        WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
-        gbutton.click();
+        WebElement button = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
+        button.click();
 
         WebElement email2= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email2.sendKeys("team006test@gmail.com");
@@ -64,15 +64,14 @@ public class mertCanatTest01 extends BaseDriver {
         WebElement submitButton2= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton2.click();
         Myfunc.Bekle(1);
-
-
     }
+
     @Test
-    public void Test3(){
+    public void Negative2(){
         driver.get("https://www.akakce.com/");
 
-        WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
-        gbutton.click();
+        WebElement button = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
+        button.click();
 
         WebElement email3= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email3.sendKeys("team006test@gmail");
@@ -85,14 +84,14 @@ public class mertCanatTest01 extends BaseDriver {
         WebElement submitButton3= driver.findElement(By.cssSelector("[class='checkbox-wrapper']+label +a+input"));
         submitButton3.click();
         Myfunc.Bekle(1);
-
     }
+
     @Test
-    public void Test4(){
+    public void Negative3(){
         driver.get("https://www.akakce.com/");
 
-        WebElement gbutton = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
-        gbutton.click();
+        WebElement button = driver.findElement(By.cssSelector("[id='H_rl_v8']> :nth-child(2)"));
+        button.click();
 
         WebElement email4= driver.findElement(By.cssSelector("[id='FrmLi']> :nth-child(4) input"));
         email4.sendKeys("");
@@ -107,7 +106,6 @@ public class mertCanatTest01 extends BaseDriver {
         Myfunc.Bekle(1);
 
     }
-
 }
 
 
