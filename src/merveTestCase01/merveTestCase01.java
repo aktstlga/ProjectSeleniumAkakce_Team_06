@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 public class merveTestCase01 extends BaseDriver {
         @Test
-        public void Test() throws InterruptedException {
+        public void orderListCheck() throws InterruptedException {
                 driver.get("https://www.akakce.com/");
 
                 WebElement loginButton = driver.findElement(By.cssSelector("a[href*='giris']"));
