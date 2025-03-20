@@ -1,4 +1,4 @@
-package merveTestCase01;
+package Akakce_Project;
 
 import Utility.BaseDriver;
 import org.junit.Assert;

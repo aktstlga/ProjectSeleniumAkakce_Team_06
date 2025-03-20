@@ -1,4 +1,4 @@
-package arifTestCase01.arif;
+package Akakce_Project;
 
 import Utility.BaseDriver;
 import Utility.Myfunc;
@@ -7,10 +7,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class arifTestCase_01 extends BaseDriver {
+public class arifTestCase_02 extends BaseDriver {
     @Test
-
-    public void TestOpenAccount(){
+    public void TestNotOpenAccount(){
         driver.get("https://www.akakce.com/");
         Myfunc.wait(3);
 
@@ -78,14 +77,12 @@ public class arifTestCase_01 extends BaseDriver {
         WebElement OpenAccount = driver.findElement(By.cssSelector(" input[id='rnufced']+input"));
         OpenAccount.click();
 
-        WebElement userName=driver.findElement(By.cssSelector("div[id='HM_v8']>i>a"));
-        System.out.println("AccountName = " + userName.getText());
+        WebElement message=driver.findElement(By.cssSelector("div[id='m-w']> :nth-child(1) >:nth-child(2)> :nth-child(1) p"));
+        System.out.println("Message = " + message.getText());
         Myfunc.wait(1);
 
-        Assert.assertTrue("aranılan mesaj bulunamadı",userName.getText().contains("TestName"));
+        Assert.assertTrue("aranılan mesaj bulunamadı",message.getText().contains("team006test@gmail.com Bu eposta adresi zaten kayıtlı. Lütfen giriş yapmayı deneyin."));
 
         WaitClose();
-
     }
-
 }

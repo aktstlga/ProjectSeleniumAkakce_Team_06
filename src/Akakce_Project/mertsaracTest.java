@@ -1,4 +1,4 @@
-package mertsaracTestCase01;
+package Akakce_Project;
 
 import Utility.BaseDriver;
 import Utility.Myfunc;

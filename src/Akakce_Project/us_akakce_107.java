@@ -1,4 +1,4 @@
-package tolgaTestCases;
+package Akakce_Project;
 
 import Utility.BaseDriver;
 import org.junit.Assert;
@@ -44,7 +44,7 @@ public class us_akakce_107 extends BaseDriver {
         Thread.sleep(3000);
 
         WebElement warningOnFalsePassword = driver.findElement(By.cssSelector("div.alertX.t2 p"));
-        Assert.assertTrue("Uyarı mesajı doğru verilemedi.", warningOnFalsePassword.getText().contains("Mevcut şifrenizi doğru girdiğinizden emin olun."));
+        Assert.assertTrue("Şifre girişi hatalı.", warningOnFalsePassword.getText().contains("Mevcut şifrenizi doğru girdiğinizden emin olun."));
         driver.quit();
     }
     @Test
@@ -76,7 +76,7 @@ public class us_akakce_107 extends BaseDriver {
         Thread.sleep(3000);
 
         WebElement passwordForDelete = driver.findElement(By.cssSelector("input.t[type='password']"));
-        passwordForDelete.sendKeys("Password123"); //INVALID FOR NOW
+        passwordForDelete.sendKeys("Password123"); //Valid
         Thread.sleep(3000);
 
         WebElement deleteButton = driver.findElement(By.cssSelector("input[value='Hesabımı sil']"));
