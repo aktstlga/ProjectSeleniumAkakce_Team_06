@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 
-public class mertCanatTest01 extends BaseDriver {
+public class us_akakce_104 extends BaseDriver {
 
     @Test
     public void Test1(){
