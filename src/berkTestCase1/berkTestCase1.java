@@ -46,8 +46,8 @@ public class berkTestCase1 extends BaseDriver {
         button.click();
         Myfunc.wait(1);
         WebElement message = driver.findElement(By.cssSelector("[id='HM_v8']>i>a"));
-        Assert.assertTrue("Aranan mesaj bulunamadı.", message.getText().contains("Testing"));
-        WebElement account = driver.findElement(By.cssSelector("[class='rw_v8']>div+div i+a"));
+        Assert.assertTrue("Aranan mesaj bulunamadı.", message.getText().contains("TestName"));
+        WebElement account = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
         account.click();
         Myfunc.wait(1);
         WebElement exit = driver.findElement(By.cssSelector("[id='HM_p_v8']+li+li+li+li+li a"));
