@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class mertsaracTest extends BaseDriver {
+public class us_akakce_105 extends BaseDriver {
     @Test
     public void messageBoxCheck() {
         driver.get("https://www.akakce.com/");
