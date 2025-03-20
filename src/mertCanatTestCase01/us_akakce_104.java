@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 
-public class mertCanatTest01 extends BaseDriver {
+public class us_akakce_104 extends BaseDriver {
 
     @Test
     public void Positive(){
