@@ -5,9 +5,10 @@ import Utility.Myfunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class berkTestCase1 extends BaseDriver {
+public class us_akakce_102ve103 extends BaseDriver {
     @Test
     public void US_102() {
         driver.get("https://www.akakce.com/");
