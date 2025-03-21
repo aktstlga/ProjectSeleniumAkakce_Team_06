@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class merveTestCase01 extends BaseDriver {
+public class us_akakce_105 extends BaseDriver {
         @Test
         public void orderListCheck() throws InterruptedException {
                 driver.get("https://www.akakce.com/");
